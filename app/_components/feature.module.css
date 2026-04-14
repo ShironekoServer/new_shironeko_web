@@ -1,0 +1,29 @@
+.featureCard {
+  height: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.featureIcon {
+  margin-bottom: 1.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .featureCard {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+  }
+
+  .featureCard:hover {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+  }
+}
