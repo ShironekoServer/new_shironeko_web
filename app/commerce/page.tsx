@@ -8,24 +8,41 @@ export default function Commerce() {
         <table className="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
           <tbody>
             <tr>
-              <th>代表者</th>
-              <td>丸山 紘汰</td>
+              <th>法人名</th>
+              <td>
+                請求があった場合には速やかに開示いたします{" "}
+                <small>
+                  <small>*1</small>
+                </small>
+              </td>
             </tr>
             <tr>
-              <th>運営統括責任者</th>
-              <td>丸山 紘汰</td>
+              <th>運営責任者</th>
+              <td>
+                請求があった場合には速やかに開示いたします{" "}
+                <small>
+                  <small>*1</small>
+                </small>
+              </td>
             </tr>
             <tr>
               <th>所在地</th>
-              <td>神奈川県横浜市神奈川区金港町5-14 クアドリフォリオ8階</td>
+              <td>
+                請求があった場合には速やかに開示いたします{" "}
+                <small>
+                  <small>*1</small>
+                </small>
+              </td>
             </tr>
             <tr>
               <th>電話番号</th>
               <td>
                 050-1726-7452{" "}
                 <small>
-                  <small>*1</small>
+                  <small>*2</small>
                 </small>
+                <br />
+                24時間対応
               </td>
             </tr>
             <tr>
@@ -41,25 +58,31 @@ export default function Commerce() {
               <td>https://shironekoserver.com/</td>
             </tr>
             <tr>
-              <th>追加手数料等の追加料金</th>
+              <th>商品販売価格</th>
+              <td>各商品ページに記載の価格</td>
+            </tr>
+            <tr>
+              <th>商品代品以外にかかる料金</th>
               <td>なし</td>
             </tr>
             <tr>
-              <th>受け付け可能な決済手段</th>
-              <td>PayPay</td>
+              <th>支払い方法</th>
+              <td>PayPay・クレジットカード・ステーブルコイン</td>
             </tr>
             <tr>
-              <th>決済期間</th>
-              <td>ただちに処理されます</td>
+              <th>支払い時期</th>
+              <td>
+                PayPay・クレジットカード・ステーブルコイン：注文時に直ちに処理されます。
+              </td>
+            </tr>
+            <tr>
+              <th>商品の引渡時期</th>
+              <td>注文時に直ちに引渡されます。</td>
             </tr>
             <tr>
               <th>返品・交換・キャンセルについて</th>
-              <td>サービスの性質上、返品・返金はお受けしておりません</td>
-            </tr>
-            <tr>
-              <th>引渡時期</th>
               <td>
-                ご購入手続き後、即日でご利用可能です（特別な条件がある場合を除く）
+                デジタルコンテンツの性質上、返品・交換・キャンセルはお受けしておりません。
               </td>
             </tr>
             <tr>
@@ -71,7 +94,12 @@ export default function Commerce() {
         <p>
           <small>
             <small>*1</small>{" "}
-            お電話のお問い合わせに関しては承っておりません。電話は自動音声で案内され、SMSでメールに誘導されます。
+            個人事業主のため、Webサイトでの表示を省略させていただきます。請求があった場合には速やかに開示いたします。
+          </small>
+          <br />
+          <small>
+            <small>*2</small>{" "}
+            お電話での問い合わせお場合、電話は自動音声で案内され、SMSでメールに誘導されます。
           </small>
         </p>
       </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import FeatureComponent from "@/app/_components/feature";
+import { useEffect, useState } from "react";
 import {
   BarChartLine,
   Code,
@@ -9,10 +10,33 @@ import {
   Rocket,
   ShieldCheck,
 } from "react-bootstrap-icons";
+import style from "./page.module.css";
 
 export default function Home() {
+  const [isScrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const fixedClass = [
+    style.fixed,
+    isScrolled ? style.fixedHidden : style.fixedVisible,
+  ].join(" ");
+
   return (
     <>
+      <section className={fixedClass}>
+        <p style={{ backgroundColor: "var(--bulma-body-background-color)" }}>
+          ↓ スクロールしてもっと<b>ShironekoServer</b>を知ろう ↓
+        </p>
+      </section>
+
       <section className="section" style={{ width: "100vw", height: "100vh" }}>
         <div
           className="container"
@@ -22,12 +46,20 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
+            alignItems: "center",
           }}
         >
-          <h1 className="title is-3">迷うのを辞めよう。</h1>
+          <img src="/logo.png" alt="ShironekoServer" />
+          <h1 className="title is-3">サーバー構築が面倒？</h1>
           <p className="subtitle">
-            できるよ。<b>ShironekoServer</b>ならね。
+            簡単にやっちゃおう。<b>ShironekoServer</b>で。
           </p>
+          <a
+            className="button is-primary"
+            href="https://wing.shironekoserver.com/"
+          >
+            さっそく使ってみる！
+          </a>
         </div>
       </section>
 

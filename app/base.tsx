@@ -11,12 +11,16 @@ export default function Base({
   const [navExpand, setNavExpand] = useState(false);
 
   return (
-    <html lang="ja">
+    <html lang="ja" className="has-navbar-fixed-top">
       <body>
-        <nav className="navbar" role="navigation" aria-label="main navigation">
+        <nav
+          className="navbar is-fixed-top"
+          role="navigation"
+          aria-label="main navigation"
+        >
           <div className="navbar-brand">
             <Link className="navbar-item" href="/">
-              <img src="/siteimage.jpg" alt="ShironekoServer" />
+              <img src="/logo.png" alt="ShironekoServer" />
             </Link>
 
             <a
@@ -38,10 +42,11 @@ export default function Base({
 
           <div className={`navbar-menu ${navExpand ? "is-active" : ""}`}>
             <div className="navbar-start">
-              <a className="navbar-item" href="https://discord.gg/MXdrkR7626">
-                公式Discord
-              </a>
+              <Link className="navbar-item" href="/support">
+                サポート
+              </Link>
 
+              {/*
               <div className="navbar-item has-dropdown is-hoverable">
                 <a className="navbar-link">ドキュメント</a>
 
@@ -53,15 +58,16 @@ export default function Base({
                   <a className="navbar-item"> 準備中... </a>
                 </div>
               </div>
+              */}
             </div>
 
             <div className="navbar-end">
               <div className="navbar-item">
                 <a
-                  className="button is-primary"
+                  className="button is-primary is-fullwidth"
                   href="https://wing.shironekoserver.com/"
                 >
-                  さっそく使ってみる！
+                  パネルログイン
                 </a>
               </div>
             </div>
@@ -75,19 +81,24 @@ export default function Base({
             <div className="content has-text-centered">
               <div className="columns is-centered is-multiline">
                 <div className="column is-narrow">
-                  <a href="/terms" className="button is-text">
+                  <Link href="/support" className="button is-text">
+                    サポート
+                  </Link>
+                </div>
+                <div className="column is-narrow">
+                  <Link href="/terms" className="button is-text">
                     利用規約
-                  </a>
+                  </Link>
                 </div>
                 <div className="column is-narrow">
-                  <a href="/privacy" className="button is-text">
+                  <Link href="/privacy" className="button is-text">
                     プライバシーポリシー
-                  </a>
+                  </Link>
                 </div>
                 <div className="column is-narrow">
-                  <a href="/commerce" className="button is-text">
+                  <Link href="/commerce" className="button is-text">
                     特定商取引法に基づく表記
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -113,7 +124,7 @@ export default function Base({
               </p>
 
               <p className="is-size-7 has-text-grey">
-                © 2024 ShironekoServer. All rights reserved.
+                © 2026 ShironekoServer. All rights reserved.
               </p>
             </div>
           </div>
