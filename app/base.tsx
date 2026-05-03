@@ -46,6 +46,10 @@ export default function Base({
                 サポート
               </Link>
 
+              <Link className="navbar-item" href="/shop">
+                ショップ
+              </Link>
+
               {/*
               <div className="navbar-item has-dropdown is-hoverable">
                 <a className="navbar-link">ドキュメント</a>
