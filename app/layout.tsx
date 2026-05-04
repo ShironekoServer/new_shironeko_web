@@ -3,16 +3,21 @@ import Base from "./base";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ShironekoServer",
-  description: "Discordボットに使えるサーバー環境を提供しています。価格は0円〜",
+  metadataBase: new URL("https://www.shironekoserver.com"),
+  title: {
+    default: "ShironekoServer",
+    template: "%s | ShironekoServer",
+  },
+  description:
+    "ShironekoServerは、Discord Botや小規模アプリケーション向けのホスティング環境を月額で提供するサービスです。",
   openGraph: {
     type: "website",
     url: "https://www.shironekoserver.com/",
-    title: "トップページ",
+    title: "ShironekoServer",
     description:
-      "Discordボットに使えるサーバー環境を提供しています。価格は0円〜",
+      "Discord Botや小規模アプリケーション向けのホスティング環境を月額で提供するサービスです。",
     siteName: "ShironekoServer",
-    images: [{ url: "https://www.shironekoserver.com/logo.png" }],
+    images: [{ url: "/logo.png" }],
   },
 };
 

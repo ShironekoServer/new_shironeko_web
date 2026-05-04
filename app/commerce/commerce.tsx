@@ -1,24 +1,25 @@
-"use client";
-
 import Link from "next/link";
 
 export default function Commerce() {
   return (
     <section className="section">
-      <div className="container">
-        <h1 className="title">特定商取引法に基づく表記</h1>
-        <table className="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+      <div className="container content policy-page">
+        <h1>特定商取引法に基づく表記</h1>
+        <table className="table is-bordered is-striped is-fullwidth">
           <tbody>
             <tr>
-              <th>事業者名</th>
+              <th>販売事業者</th>
+              <td>ShironekoServer</td>
+            </tr>
+            <tr>
+              <th>運営責任者</th>
               <td>伊藤 悠貴</td>
             </tr>
             <tr>
               <th>所在地</th>
               <td>
-                請求があった場合には遅滞なく開示いたします
-                <br />
-                ※個人事業主のため、上記のとおり省略しております
+                〒221-0056 神奈川県横浜市神奈川区金港町5-14
+                クアドリフォリオ8階
               </td>
             </tr>
             <tr>
@@ -26,7 +27,7 @@ export default function Commerce() {
               <td>
                 050-1726-7452
                 <br />
-                受付時間：平日 10:00〜18:00（土日祝を除く）
+                受付時間: 平日10:00から18:00
               </td>
             </tr>
             <tr>
@@ -35,8 +36,6 @@ export default function Commerce() {
                 <a href="mailto:support@shironekoserver.com">
                   support@shironekoserver.com
                 </a>
-                <br />
-                受付時間：24時間（返信は営業時間内に対応）
               </td>
             </tr>
             <tr>
@@ -47,41 +46,58 @@ export default function Commerce() {
             </tr>
             <tr>
               <th>販売価格</th>
-              <td>各商品ページに記載の価格（税込）</td>
+              <td>
+                各商品ページに税込価格で表示します。月額プランは毎月同日に自動更新されます。
+              </td>
             </tr>
             <tr>
-              <th>追加手数料</th>
-              <td>なし</td>
+              <th>商品代金以外の必要料金</th>
+              <td>
+                追加手数料はありません。インターネット接続料金、通信料金はお客様のご負担です。
+              </td>
             </tr>
             <tr>
-              <th>支払い方法</th>
-              <td>クレジットカード・PayPay</td>
+              <th>支払方法</th>
+              <td>クレジットカードその他、決済画面に表示される方法</td>
             </tr>
             <tr>
-              <th>支払い時期</th>
-              <td>クレジットカード・PayPay：注文時に直ちに決済されます</td>
+              <th>支払時期</th>
+              <td>
+                初回は注文時に決済されます。月額サブスクリプションは毎月の更新日に決済されます。
+              </td>
             </tr>
             <tr>
               <th>サービス提供時期</th>
               <td>
-                決済完了後、直ちにサーバーの利用権および管理パネルへのアクセスが付与されます
+                決済完了後、通常は直ちに管理パネルで利用できます。障害、審査、本人確認等により提供開始が遅れる場合があります。
               </td>
             </tr>
             <tr>
-              <th>返品・キャンセルについて</th>
+              <th>返品・返金</th>
               <td>
-                本サービスはデジタルサービスの性質上、提供開始後の返金は原則として受け付けておりません。
-                <br />
-                サブスクリプションはいつでも解約可能であり、次回更新日以降の課金が停止されます。
-                <br />
-                解約後も契約期間終了日まではサービスをご利用いただけます。
-                <br />
-                重大な不具合等によりサービス提供が困難な場合は、個別に対応いたします。
+                本サービスはデジタルサービスのため、提供開始後の返品・返金は原則として承っていません。
+                重複決済、重大な提供不備、当社都合による提供不能がある場合は個別に対応します。
+              </td>
+            </tr>
+            <tr>
+              <th>解約・キャンセル</th>
+              <td>
+                月額サブスクリプションはいつでも解約できます。解約後は次回更新日以降の請求を停止します。
+                契約期間終了日まではサービスを利用できます。
+              </td>
+            </tr>
+            <tr>
+              <th>動作環境</th>
+              <td>
+                管理パネルの利用には、最新の主要ブラウザとインターネット接続が必要です。
               </td>
             </tr>
             <tr>
               <th>特別条件</th>
-              <td>未成年者は保護者の同意を得た上でご利用ください。</td>
+              <td>
+                未成年の方は保護者の同意を得たうえでご利用ください。禁止用途は
+                <Link href="/terms">利用規約</Link>に定めます。
+              </td>
             </tr>
           </tbody>
         </table>

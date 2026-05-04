@@ -1,8 +1,6 @@
-"use client";
-
 import FeatureComponent from "@/app/_components/feature";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import Image from "next/image";
 import {
   BarChartLine,
   Code,
@@ -11,104 +9,109 @@ import {
   Rocket,
   ShieldCheck,
 } from "react-bootstrap-icons";
-import style from "./page.module.css";
 
 export default function Home() {
-  const [isScrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 0);
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const fixedClass = [
-    style.fixed,
-    isScrolled ? style.fixedHidden : style.fixedVisible,
-  ].join(" ");
-
   return (
     <>
-      <section className={fixedClass}>
-        <p style={{ backgroundColor: "var(--bulma-body-background-color)" }}>
-          ↓ スクロールしてもっと<b>ShironekoServer</b>を知ろう ↓
-        </p>
-      </section>
-
-      <section className="section" style={{ width: "100vw", height: "100vh" }}>
-        <div
-          className="container"
-          style={{
-            width: "100%",
-            height: "100%",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <img src="/logo.png" alt="ShironekoServer" />
-          <h1 className="title is-3">サーバー構築が面倒？</h1>
-          <p className="subtitle">
-            簡単にやっちゃおう。<b>ShironekoServer</b>で。
-          </p>
-          <div className="is-flex" style={{ gap: "10px" }}>
-            <a
-              className="button is-primary"
-              href="https://wing.shironekoserver.com/"
-            >
-              さっそく使ってみる！
-            </a>
-            <Link className="button is-link" href="/shop">
-              ショップ
-            </Link>
+      <section className="section hero-section">
+        <div className="container hero-inner">
+          <div className="hero-copy">
+            <p className="has-text-weight-semibold has-text-primary">
+              Discord Bot・小規模アプリ向けホスティング
+            </p>
+            <h1 className="title is-2">ShironekoServer</h1>
+            <p className="subtitle">
+              月額100円から使える、個人開発者向けのホスティング環境です。
+              料金、提供内容、更新課金、キャンセル条件を購入前に確認できます。
+            </p>
+            <div className="buttons">
+              <Link className="button is-primary" href="/shop">
+                料金を見る
+              </Link>
+              <Link className="button is-light" href="/support">
+                問い合わせる
+              </Link>
+            </div>
+          </div>
+          <div className="hero-logo" aria-hidden="true">
+            <Image
+              src="/logo.png"
+              alt=""
+              width={1500}
+              height={500}
+              priority
+              sizes="(max-width: 768px) 80vw, 320px"
+            />
           </div>
         </div>
       </section>
 
       <section className="section">
-        <hr />
-        <h2 className="title is-4 has-text-centered">ShironekoServerの特徴</h2>
-        <div className="columns is-multiline">
-          <FeatureComponent
-            icon={<Rocket fontSize={50} />}
-            color="primary"
-            title="高速なサーバー"
-            description="最新のハードウェアと最適化されたソフトウェアで、高速かつ安定した環境を提供します。"
-          />
-          <FeatureComponent
-            icon={<ShieldCheck fontSize={50} />}
-            color="info"
-            title="24時間稼働"
-            description="常時監視システムにより、あなたのサービスを24時間365日安定して稼働させることができます。"
-          />
-          <FeatureComponent
-            icon={<Headset fontSize={50} />}
-            color="success"
-            title="充実したサポート"
-            description="初心者の方でも安心して利用できるよう、丁寧なサポートを提供しています。"
-          />
-          <FeatureComponent
-            icon={<Code fontSize={50} />}
-            color="warning"
-            title="多言語対応"
-            description="Python、JavaScript、Javaなど、様々なプログラミング言語でのサービス運営に対応しています。"
-          />
-          <FeatureComponent
-            icon={<Database fontSize={50} />}
-            color="danger"
-            title="データベース連携"
-            description="MongoDBのデータベースがついてくるので、ファイルがごちゃごちゃする心配もありません。"
-          />
-          <FeatureComponent
-            icon={<BarChartLine fontSize={50} />}
-            color="link"
-            title="スケーラブル"
-            description="ボットの成長に合わせて、簡単にリソースをアップグレードすることができます。"
-          />
+        <div className="container">
+          <h2 className="title is-4 has-text-centered">
+            ShironekoServerでできること
+          </h2>
+          <div className="columns is-multiline">
+            <FeatureComponent
+              icon={<Rocket fontSize={50} />}
+              color="primary"
+              title="すぐに使える環境"
+              description="決済完了後、管理パネルからサーバー環境を利用できます。Discord Botや小規模Webアプリの運用に向いています。"
+            />
+            <FeatureComponent
+              icon={<ShieldCheck fontSize={50} />}
+              color="info"
+              title="継続運用を重視"
+              description="安定稼働を前提に、必要に応じてメンテナンス告知や障害対応を行います。"
+            />
+            <FeatureComponent
+              icon={<Headset fontSize={50} />}
+              color="success"
+              title="問い合わせ窓口"
+              description="購入前後の質問、請求、解約、障害についてメールまたはDiscordで受け付けます。"
+            />
+            <FeatureComponent
+              icon={<Code fontSize={50} />}
+              color="warning"
+              title="開発者向け"
+              description="Python、JavaScript、Javaなど、Botや軽量な常駐プログラムの運用を想定しています。"
+            />
+            <FeatureComponent
+              icon={<Database fontSize={50} />}
+              color="danger"
+              title="プラン別リソース"
+              description="メモリ、CPU、ストレージ容量をプランごとに明示しています。用途に合わせて選択できます。"
+            />
+            <FeatureComponent
+              icon={<BarChartLine fontSize={50} />}
+              color="link"
+              title="月額サブスクリプション"
+              description="料金は税込の月額表示です。解約後は次回更新日以降の課金を停止します。"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="notification is-info is-light">
+            <h2 className="title is-5">購入前にご確認ください</h2>
+            <p>
+              本サービスはデジタルサービスです。提供開始後の返金は原則として承っていません。
+              解約、返金、問い合わせ、事業者情報は以下のページで確認できます。
+            </p>
+            <div className="buttons mt-4">
+              <Link className="button is-info" href="/commerce">
+                特商法表記
+              </Link>
+              <Link className="button is-light" href="/terms">
+                利用規約
+              </Link>
+              <Link className="button is-light" href="/privacy">
+                プライバシーポリシー
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </>

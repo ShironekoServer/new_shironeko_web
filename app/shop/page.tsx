@@ -1,16 +1,18 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import Shop from "./shop";
 
 export const metadata: Metadata = {
-  title: "ショップ",
-  description: "ShironekoServerのショップ。",
+  title: "料金・商品",
+  description:
+    "ShironekoServerの月額ホスティングプラン、税込価格、提供内容、更新条件を掲載しています。",
   openGraph: {
     type: "website",
-    url: "https://www.shironekoserver.com/commerce",
-    title: "ショップ",
-    description: "ShironekoServerのショップ。",
+    url: "https://www.shironekoserver.com/shop",
+    title: "料金・商品",
+    description:
+      "ShironekoServerの月額ホスティングプラン、税込価格、提供内容、更新条件を掲載しています。",
     siteName: "ShironekoServer",
-    images: [{ url: "https://www.shironekoserver.com/logo.png" }],
+    images: [{ url: "/logo.png" }],
   },
 };
 

@@ -12,6 +12,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  gap: 1.5rem;
 }
 
 .featureCard:hover {
@@ -21,6 +22,11 @@
 
 .featureIcon {
   margin-bottom: 1.5rem;
+}
+
+.specList {
+  margin-top: 1rem;
+  text-align: left;
 }
 
 @media (prefers-color-scheme: dark) {
