@@ -1,6 +1,7 @@
 "use client";
 
 import FeatureComponent from "@/app/_components/feature";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import {
   BarChartLine,
@@ -54,12 +55,17 @@ export default function Home() {
           <p className="subtitle">
             簡単にやっちゃおう。<b>ShironekoServer</b>で。
           </p>
-          <a
-            className="button is-primary"
-            href="https://wing.shironekoserver.com/"
-          >
-            さっそく使ってみる！
-          </a>
+          <div className="is-flex" style={{ gap: "10px" }}>
+            <a
+              className="button is-primary"
+              href="https://wing.shironekoserver.com/"
+            >
+              さっそく使ってみる！
+            </a>
+            <Link className="button is-link" href="/shop">
+              ショップ
+            </Link>
+          </div>
         </div>
       </section>
 
