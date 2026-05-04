@@ -39,6 +39,8 @@ export default function Commerce() {
                 <a href="mailto:support@shironekoserver.com">
                   support@shironekoserver.com
                 </a>
+                <br />
+                24時間対応
               </td>
             </tr>
             <tr>
