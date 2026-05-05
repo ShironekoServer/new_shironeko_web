@@ -1,3 +1,5 @@
+"use client";
+
 import ItemComponent from "@/app/_components/item";
 import Link from "next/link";
 

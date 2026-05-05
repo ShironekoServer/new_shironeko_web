@@ -1,3 +1,5 @@
+"use client";
+
 export default function Privacy() {
   return (
     <section className="section">
@@ -10,10 +12,14 @@ export default function Privacy() {
         <h2>取得する情報</h2>
         <p>当社は、以下の情報を取得することがあります。</p>
         <ol>
-          <li>氏名、メールアドレス、電話番号など問い合わせや本人確認に必要な情報</li>
+          <li>
+            氏名、メールアドレス、電話番号など問い合わせや本人確認に必要な情報
+          </li>
           <li>アカウントID、契約プラン、利用状況、サポート履歴</li>
           <li>決済状況、請求履歴、サブスクリプション状態</li>
-          <li>アクセスログ、IPアドレス、ブラウザ情報などサービス運営に必要な技術情報</li>
+          <li>
+            アクセスログ、IPアドレス、ブラウザ情報などサービス運営に必要な技術情報
+          </li>
         </ol>
 
         <h2>利用目的</h2>
@@ -55,9 +61,7 @@ export default function Privacy() {
         </p>
 
         <h2>お問い合わせ</h2>
-        <p>
-          本ポリシーに関するお問い合わせは、以下の窓口までご連絡ください。
-        </p>
+        <p>本ポリシーに関するお問い合わせは、以下の窓口までご連絡ください。</p>
         <p>
           メール:
           <a href="mailto:support@shironekoserver.com">
