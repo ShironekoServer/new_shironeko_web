@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Base({
@@ -52,9 +52,6 @@ export default function Base({
               </Link>
               <Link className="navbar-item" href="/support">
                 お問い合わせ
-              </Link>
-              <Link className="navbar-item" href="/commerce">
-                特定商取引法に基づく表記
               </Link>
             </div>
 
