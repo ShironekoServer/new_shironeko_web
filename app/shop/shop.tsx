@@ -8,7 +8,8 @@ export default function Shop() {
         <div className="content">
           <h1 className="title">料金・商品</h1>
           <p>
-            ShironekoServerは、Discord Botや小規模アプリケーションの運用に必要なサーバー環境を月額で提供します。
+            ShironekoServerは、Discord
+            Botや小規模アプリケーションの運用に必要なサーバー環境を月額で提供します。
             すべて税込価格で、追加手数料はありません。
           </p>
           <p>
@@ -62,8 +63,7 @@ export default function Shop() {
         <div className="notification is-warning is-light mt-5">
           <h2 className="title is-5">提供開始・更新・キャンセル</h2>
           <p>
-            決済完了後、通常は直ちに管理パネルで利用できます。月額サブスクリプションは毎月自動更新されます。
-            解約はいつでも可能で、解約後は次回更新日以降の請求を停止します。
+            決済完了後、通常は直ちに管理パネルで利用できます。サブスクリプションではないため、毎月購入必要があります。
           </p>
           <p className="mt-3">
             デジタルサービスの性質上、提供開始後の返金は原則として承っていません。
