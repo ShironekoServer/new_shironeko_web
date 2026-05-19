@@ -7,8 +7,8 @@ export const metadata: Metadata = {
     "These are the Terms of Service for ShironekoServer, covering service details, fees, cancellation, prohibited activities, disclaimers and the handling of personal information.",
   openGraph: {
     type: "website",
-    url: "https://www.shironekoserver.com/terms",
-    title: "利用規約",
+    url: "https://www.shironekoserver.com/en/terms",
+    title: "Terms of Service",
     description:
       "These are the Terms of Service for ShironekoServer, covering service details, fees, cancellation, prohibited activities, disclaimers and the handling of personal information.",
     siteName: "ShironekoServer",
