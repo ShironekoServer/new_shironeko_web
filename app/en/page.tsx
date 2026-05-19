@@ -95,20 +95,20 @@ export default function Home() {
       <section className="section">
         <div className="container">
           <div className="notification is-info is-light">
-            <h2 className="title is-5">購入前にご確認ください</h2>
+            <h2 className="title is-5">Please review this information before purchasing</h2>
             <p>
-              本サービスはデジタルサービスです。提供開始後の返金は原則として承っていません。
-              解約、返金、問い合わせ、事業者情報は以下のページで確認できます。
+              This is a digital service. As a general rule, we do not issue refunds after the service has begun.
+              Information regarding cancellation, refunds, inquiries, and the service provider can be found on the following page.
             </p>
             <div className="buttons mt-4">
               <Link className="button is-info" href="/commerce">
-                特商法表記
+                (For Users residing in Japan) 特商法表記
               </Link>
               <Link className="button is-light" href="/terms">
-                利用規約
+                Terms of Service
               </Link>
               <Link className="button is-light" href="/privacy">
-                プライバシーポリシー
+                Privacy Policy
               </Link>
             </div>
           </div>
