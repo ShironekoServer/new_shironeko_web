@@ -101,9 +101,6 @@ export default function Home() {
               Information regarding cancellation, refunds, inquiries, and the service provider can be found on the following page.
             </p>
             <div className="buttons mt-4">
-              <Link className="button is-info" href="/commerce">
-                (For Users residing in Japan) 特商法表記
-              </Link>
               <Link className="button is-light" href="/terms">
                 Terms of Service
               </Link>
