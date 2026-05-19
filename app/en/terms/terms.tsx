@@ -6,97 +6,131 @@ export default function Terms() {
   return (
     <section className="section">
       <div className="container content policy-page">
-        <h1>利用規約</h1>
+        <h1>Terms of Service</h1>
         <p>
-          この利用規約は、ShironekoServerが提供するホスティングサービスの利用条件を定めるものです。
-          ユーザーは本規約に同意したうえで本サービスを利用します。
+          These Terms of Service govern the use of the hosting services
+          provided by ShironekoServer. By using this service, users agree to
+          these terms.
         </p>
 
-        <h2>第1条 適用</h2>
+        <h2>Article 1: Scope</h2>
         <p>
-          本規約は、ユーザーとShironekoServerとの間の本サービス利用に関する一切の関係に適用されます。
+          These Terms apply to all relationships between the user and
+          ShironekoServer regarding the use of this service.
         </p>
 
-        <h2>第2条 サービス内容</h2>
+        <h2>Article 2: Service Description</h2>
         <p>
-          本サービスは、Discord
-          Bot、小規模アプリケーション、軽量な常駐プログラム等を運用するためのサーバー環境を提供する月額サービスです。
-          プランごとのリソース、料金、更新条件は
-          <Link href="/shop">料金・商品ページ</Link>に表示します。
+          This service is a subscription-based hosting service that provides a
+          server environment for operating Discord bots, small-scale
+          applications, lightweight background services, and similar software.
+          Resource allocations, pricing, and renewal conditions for each plan
+          are listed on the{" "}
+          <Link href="/en/shop">Pricing & Products</Link> page.
         </p>
 
-        <h2>第3条 アカウント管理</h2>
+        <h2>Article 3: Account Management</h2>
         <p>
-          ユーザーは、登録情報を正確に提供し、アカウント情報を自己の責任で管理するものとします。
-          アカウントの第三者への貸与、譲渡、共有は禁止します。
+          Users are responsible for providing accurate registration information
+          and managing their account credentials at their own responsibility.
+          Lending, transferring, or sharing accounts with third parties is
+          prohibited.
         </p>
 
-        <h2>第4条 料金・支払い</h2>
+        <h2>Article 4: Fees and Payment</h2>
         <p>
-          有料プランの料金は税込の月額表示です。支払い方法、支払時期、返金、解約条件は
-          <Link href="/commerce">特定商取引法に基づく表記</Link>に定めます。
+          Fees for paid plans are displayed as monthly prices inclusive of
+          applicable taxes. Payment methods, payment timing, refunds, and
+          cancellation conditions are defined in our{" "}
+          <Link href="/en/commerce">
+            Commercial Transactions Act Disclosure
+          </Link>
+          .
         </p>
 
-        <h2>第5条 解約</h2>
+        <h2>Article 5: Cancellation</h2>
         <p>
-          ユーザーはいつでも月額サブスクリプションを解約できます。解約後は次回更新日以降の請求を停止します。
-          契約期間中の残期間についての日割り返金は行いません。
+          Users may cancel their monthly subscription at any time. After
+          cancellation, billing will stop from the next renewal date onward. No
+          prorated refunds will be provided for any unused portion of the
+          subscription period.
         </p>
 
-        <h2>第6条 禁止事項</h2>
+        <h2>Article 6: Prohibited Activities</h2>
         <p>
-          ユーザーは、本サービスの利用にあたり以下の行為をしてはなりません。
+          Users must not engage in the following activities when using this
+          service:
         </p>
         <ol>
-          <li>法令または公序良俗に違反する行為</li>
-          <li>犯罪行為または犯罪を助長する行為</li>
+          <li>Violating laws or public order and morals</li>
+          <li>Criminal activity or activity that promotes criminal conduct</li>
           <li>
-            第三者の知的財産権、プライバシー、信用、その他の権利を侵害する行為
+            Infringing upon third-party intellectual property, privacy,
+            reputation, or other rights
           </li>
           <li>
-            不正アクセス、マルウェア配布、フィッシング、スパム送信、過度な負荷を発生させる行為
+            Unauthorized access, malware distribution, phishing, spam, or
+            activities that generate excessive system load
           </li>
           <li>
-            成人向け、暴力的、差別的、違法薬物、武器、無許可金融サービス等、決済事業者や当社が不適切と判断する用途での利用
+            Use for adult content, violent or discriminatory material, illegal
+            drugs, weapons, unauthorized financial services, or any use deemed
+            inappropriate by payment providers or our company
           </li>
-          <li>当社または第三者のサービス運営を妨害する行為</li>
-          <li>その他、当社が不適切と判断する行為</li>
+          <li>
+            Interfering with the operation of our services or third-party
+            services
+          </li>
+          <li>Any other activity deemed inappropriate by our company</li>
         </ol>
 
-        <h2>第7条 利用停止・契約解除</h2>
+        <h2>Article 7: Suspension and Termination</h2>
         <p>
-          ユーザーが本規約に違反した場合、料金の支払いを怠った場合、またはサービス運営上必要と判断した場合、当社は事前通知なく本サービスの全部または一部を停止し、契約を解除できるものとします。
+          If a user violates these Terms, fails to make required payments, or
+          if deemed necessary for operational reasons, we may suspend all or
+          part of the service or terminate the agreement without prior notice.
         </p>
 
-        <h2>第8条 サービスの変更・中断</h2>
+        <h2>Article 8: Service Changes and Interruptions</h2>
         <p>
-          当社は、メンテナンス、障害、天災、通信回線の障害、外部サービスの停止、その他やむを得ない事情により、本サービスの内容を変更、中断、停止することがあります。
+          We may modify, suspend, or discontinue all or part of the service due
+          to maintenance, system failures, natural disasters, network outages,
+          third-party service interruptions, or other unavoidable
+          circumstances.
         </p>
 
-        <h2>第9条 免責</h2>
+        <h2>Article 9: Disclaimer of Liability</h2>
         <p>
-          当社は、本サービスについて完全性、正確性、有用性、特定目的への適合性を保証しません。
-          当社の故意または重過失による場合を除き、本サービスに関連してユーザーに生じた損害について責任を負いません。
+          We do not guarantee the completeness, accuracy, usefulness, or
+          fitness for a particular purpose of this service. Except in cases of
+          intentional misconduct or gross negligence on our part, we shall not
+          be liable for damages incurred by users in connection with the
+          service.
         </p>
 
-        <h2>第10条 個人情報</h2>
+        <h2>Article 10: Personal Information</h2>
         <p>
-          当社は、ユーザーの個人情報を
-          <Link href="/privacy">プライバシーポリシー</Link>
-          に従って取り扱います。
+          We handle users&apos; personal information in accordance with our{" "}
+          <Link href="/en/privacy">Privacy Policy</Link>.
         </p>
 
-        <h2>第11条 規約の変更</h2>
+        <h2>Article 11: Changes to These Terms</h2>
         <p>
-          当社は、必要に応じて本規約を変更できます。変更後の規約は、本サイトに掲載した時点で効力を生じます。
+          We may revise these Terms when necessary. Revised Terms shall become
+          effective upon publication on this website.
         </p>
 
-        <h2>第12条 準拠法・管轄</h2>
+        <h2>Article 12: Governing Law and Jurisdiction</h2>
         <p>
-          本規約は日本法に準拠します。本サービスに関して紛争が生じた場合、当社所在地を管轄する裁判所を第一審の専属的合意管轄裁判所とします。
+          These Terms shall be governed by the laws of Japan. In the event of a
+          dispute relating to this service, the court having jurisdiction over
+          our registered business location shall have exclusive jurisdiction as
+          the court of first instance.
         </p>
 
-        <p className="has-text-right">制定日: 2026年5月4日</p>
+        <p className="has-text-right">
+          Effective Date: May 4, 2026
+        </p>
       </div>
     </section>
   );
