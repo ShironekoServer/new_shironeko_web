@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Contact ShironekoServer for pre-purchase questions, billing inquiries, cancellations, service issues, and refund requests.",
   openGraph: {
     type: "website",
-    url: "https://www.shironekoserver.com/support",
+    url: "https://www.shironekoserver.com/en/support",
     title: "Support",
     description:
       "Contact ShironekoServer for pre-purchase questions, billing inquiries, cancellations, service issues, and refund requests.",
