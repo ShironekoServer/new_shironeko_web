@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "View ShironekoServer business information, contact details, pricing, payment methods, service availability, refund policy, and cancellation terms.",
   openGraph: {
     type: "website",
-    url: "https://www.shironekoserver.com/commerce",
+    url: "https://www.shironekoserver.com/en/commerce",
     title: "Commercial Transactions Act Disclosure",
     description:
       "View ShironekoServer business information, contact details, pricing, payment methods, service availability, refund policy, and cancellation terms.",
