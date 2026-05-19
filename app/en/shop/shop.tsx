@@ -16,11 +16,11 @@ export default function Shop() {
           </p>
           <p>
             Before purchasing, please review our{" "}
-            <Link href="/commerce">
+            <Link href="/en/commerce">
               Commercial Transactions Act Disclosure
             </Link>
-            , <Link href="/terms">Terms of Service</Link>, and{" "}
-            <Link href="/privacy">Privacy Policy</Link>.
+            , <Link href="/en/terms">Terms of Service</Link>, and{" "}
+            <Link href="/en/privacy">Privacy Policy</Link>.
           </p>
         </div>
 
@@ -94,7 +94,7 @@ export default function Shop() {
             available after service activation. However, if individual handling
             is required, such as for serious service issues or duplicate
             payments, please{" "}
-            <Link href="/support">contact us</Link>.
+            <Link href="/en/support">contact us</Link>.
           </p>
         </div>
       </div>
