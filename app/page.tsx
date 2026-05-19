@@ -85,8 +85,8 @@ export default function Home() {
             <FeatureComponent
               icon={<BarChartLine fontSize={50} />}
               color="link"
-              title="月額サブスクリプション"
-              description="料金は税込の月額表示です。解約後は次回更新日以降の課金を停止します。"
+              title="買い切り"
+              description="各プランは買い切りです。そのため、買いすぎてしまうことはありません"
             />
           </div>
         </div>
