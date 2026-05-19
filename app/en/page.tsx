@@ -25,10 +25,10 @@ export default function Home() {
               You can review pricing, features, billing terms, and cancellation policies before purchasing.
             </p>
             <div className="buttons">
-              <Link className="button is-primary" href="/shop">
+              <Link className="button is-primary" href="/en/shop">
                 View Prices
               </Link>
-              <Link className="button is-light" href="/support">
+              <Link className="button is-light" href="/en/support">
                 Contact us
               </Link>
             </div>
@@ -101,10 +101,10 @@ export default function Home() {
               Information regarding cancellation, refunds, inquiries, and the service provider can be found on the following page.
             </p>
             <div className="buttons mt-4">
-              <Link className="button is-light" href="/terms">
+              <Link className="button is-light" href="/en/terms">
                 Terms of Service
               </Link>
-              <Link className="button is-light" href="/privacy">
+              <Link className="button is-light" href="/en/privacy">
                 Privacy Policy
               </Link>
             </div>
