@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Learn what information ShironekoServer collects, how it is used, payment handling, third-party disclosures, security measures, and contact details.",
   openGraph: {
     type: "website",
-    url: "https://www.shironekoserver.com/privacy",
+    url: "https://www.shironekoserver.com/en/privacy",
     title: "Privacy Policy",
     description:
       "Learn what information ShironekoServer collects, how it is used, payment handling, third-party disclosures, security measures, and contact details.",
