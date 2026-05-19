@@ -48,12 +48,11 @@ export default function Terms() {
           .
         </p>
 
-        <h2>Article 5: Cancellation</h2>
+        <h2>Article 5: Service Period and Renewal</h2>
         <p>
-          Users may cancel their monthly subscription at any time. After
-          cancellation, billing will stop from the next renewal date onward. No
-          prorated refunds will be provided for any unused portion of the
-          subscription period.
+          This service is provided on a monthly basis.
+          Subscriptions do not automatically renew, and users who wish to continue using the service must make a new purchase each month.
+          Refunds or prorated reimbursements are not provided for unused portions of the service period.
         </p>
 
         <h2>Article 6: Prohibited Activities</h2>
