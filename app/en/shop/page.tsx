@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Explore ShironekoServer hosting plans, pricing, included resources, and service renewal conditions.",
   openGraph: {
     type: "website",
-    url: "https://www.shironekoserver.com/shop",
+    url: "https://www.shironekoserver.com/en/shop",
     title: "Pricing & Products",
     description:
       "Explore ShironekoServer hosting plans, pricing, included resources, and service renewal conditions.",
