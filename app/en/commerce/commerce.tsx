@@ -48,7 +48,7 @@ export default function Commerce() {
             <tr>
               <th>Website</th>
               <td>
-                <Link href="/">
+                <Link href="/en">
                   https://www.shironekoserver.com/
                 </Link>
               </td>
@@ -128,7 +128,7 @@ export default function Commerce() {
               <td>
                 Minors must obtain consent from a parent or legal guardian
                 before using the service. Prohibited uses are defined in our{" "}
-                <Link href="/terms">Terms of Service</Link>.
+                <Link href="/en/terms">Terms of Service</Link>.
               </td>
             </tr>
           </tbody>
